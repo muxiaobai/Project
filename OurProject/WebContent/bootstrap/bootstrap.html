@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  <style type="text/css">
+body{padding-top: 70px; padding-left:15px;}
+  </style>
+
+</head>
+<body>
+
+<!---->
+<!---->
+
+<!---->
+<!---->
+
+<!---->
+<!---->
+
+<!--下拉菜单-->
+
+
+
+
+<!--图像img-responsive 响应式 img-rounded 圆角图片img-cricle圆形图片 img-thumbnail缩略图片 图标@font-face{}可以修改图标字体url glyphicon glyphicon-样式 -->
+
+<img src="images/firefox-logo-small.jpg" class="img-responsive" alt="Image">
+
+<img src="images/firefox-logo-small.jpg" class="img-rounded" alt="Image">
+
+<img src="images/firefox-logo-small.jpg" class="img-cricle" alt="Image">
+
+<img src="images/firefox-logo-small.jpg" class="img-thumbuail" alt="Image">
+<span class="glyphicon glyphicon-ok"></span>
+<!--textarea select chechbox radio form-inline 把表单变成内联元素-->
+<form action="" method="POST" class="form-horizontal" role="form">
+        <div class="form-group">
+            <legend>Form title</legend>
+        </div>
+        <!--textarea-->
+        <div class="form-group">
+            <label for="textareaTextarea" class="col-sm-2 control-label">Textarea:</label>
+            <div class="col-sm-10">
+                <textarea name="textarea" id="textareaTextarea" class="form-control" rows="3" required="required"></textarea>
+            </div>
+        </div>
+
+        <!--select-->
+        <div class="form-group">
+            <label for="inputSelect" class="col-sm-2 control-label">Select:</label>
+            <div class="col-sm-10">
+                <select name="select" id="inputSelect" class="form-control" required="required">
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                </select>
+            </div>
+        </div>
+
+<!--checkbox-->
+    <div class="col-sm-offset-2">
+        <div class="checkbox">
+             <label>
+                <input type="checkbox" value="check1">
+                Checkbox
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="check2">
+                Checkbox
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="check3">
+                Checkbox
+            </label>
+        </div>
+    </div>
+
+<div class="form-group form-inline">
+     <label class="col-sm-2 control-label">checkbox:</label>
+     <div class="col-sm-10">
+         <div class="checkbox">
+             <label>
+                 <input type="checkbox" value="checkbox1">
+                 Checkbox1
+             </label>
+         </div>
+         <div class="checkbox">
+             <label>
+                 <input type="checkbox" value="checkbox2">
+                 Checkbox2
+             </label>
+         </div>
+         <div class="checkbox">
+             <label>
+                 <input type="checkbox" value="checkbox3">
+                 Checkbox3
+             </label>
+         </div>
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--radio-->
+        <div class="col-sm-offset-2">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="radio" id="inputRadio" value="1" checked="checked">
+                    1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="radio" id="inputRadio" value="2" >
+                    2
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="radio" id="inputRadio" value="3" >
+                    3
+                </label>
+            </div>
+        </div>
+<!--行内radio--> 
+         <div class="form-group form-inline">
+            <label class="col-sm-2 control-label">radio:</label>
+            <div class="col-sm-10 " style="padding-left:-20px">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="inlineRadio" id="inputInline1" value="1">
+                        inlineRadio1
+                    </label>
+                 </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="inlineRadio" id="inputInline2" value="2">
+                        inlineRadio2
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="inlineRadio" id="inputInline2" value="2">
+                        inlineRadio2
+                    </label>
+                </div>
+
+            </div>
+                        
+        </div>
+
+<!--行内radio,方式二，但没实现。--> 
+         <div class="form-group ">
+            <label class="col-sm-2 control-label">radio:</label>
+            <div class="col-sm-10 " >
+                <div class="radio">
+                    <label class="radio-inline" >
+                        <input type="radio" name="inlineRadio" id="inputInline1" value="1">
+                        inlineRadio1
+                    </label>
+                 </div>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadio" id="inputInline2" value="2">
+                        inlineRadio2
+                    </label>
+                </div>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadio" id="inputInline2" value="2">
+                        inlineRadio2
+                    </label>
+                </div>
+
+            </div>
+                        
+        </div>
+
+
+
+
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+</form>
+<!--表单的简单输入input-->
+
+<form action="" method="POST" role="form" class="form-horizontal">
+     <div class="form-group">
+            <legend>表单名</legend>
+    </div>
+
+    <div class="form-group">
+        <label for="inputText" class="col-sm-2 control-label">Text:</label>
+        <div class="col-sm-10">
+            <input type="text" name="text" id="inputText" class="form-control" value="" required="required" pattern=""placeholder="text" title="请输入文本">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputColor" class="col-sm-2 control-label">Color:</label>
+        <div class="col-sm-10">
+            <input type="color" name="color" id="inputColor" class="form-control" value="" required="required" title="颜色">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputMonth" class="col-sm-2 control-label">Month:</label>
+        <div class="col-sm-10">
+            <input type="month" name="month" id="inputMonth" class="form-control" value="" required="required" title="">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="input" class="col-sm-2 control-label">Data:</label>
+        <div class="col-sm-10">
+            <input type="date" name="data" id="input" class="form-control" value="" required="required" title="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputTime" class="col-sm-2 control-label">Time:</label>
+        <div class="col-sm-10">
+            <input type="time" name="time" id="inputTime" class="form-control" value="" required="required" title="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail" class="col-sm-2 control-label">Email:</label>
+        <div class="col-sm-10">
+            <input type="email" name="email" id="inputEmail" class="form-control" value="" required="required" title="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputNumber" class="col-sm-2 control-label">Number:</label>
+        <div class="col-sm-10">
+            <input type="number" name="number" id="inputNumber" class="form-control" value="6"  min="6" max="12" step="2" required="required" title="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="col-sm-2 control-label">Password:</label>
+        <div class="col-sm-10">
+            <input type="password" name="password" id="inputPassword" class="form-control" required="required" title="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputRange" class="col-sm-2 control-label">Range:</label>
+        <div class="col-sm-10">
+            <input type="range" name="range" id="inputRange" class="form-control" min="0"  max="10" step="3" required="required" title="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputSearch" class="col-sm-2 control-label">Search:</label>
+        <div class="col-sm-10">
+            <input type="search" name="search" id="inputSearch" class="form-control" value="" required="required" title="">
+        </div>
+    </div>  
+    <div class="form-group">
+        <label for="inputTel" class="col-sm-2 control-label">Tel:</label>
+        <div class="col-sm-10">
+            <input type="tel" name="tel" id="inputTel" class="form-control" value="" required="required" title="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputUrl" class="col-sm-2 control-label">Url:</label>
+        <div class="col-sm-10">
+            <input type="url" name="url" id="inputUrl" class="form-control" value="" required="required" title="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputWeek" class="col-sm-2 control-label">Week:</label>
+        <div class="col-sm-10">
+            <input type="week" name="week" id="inputWeek" class="form-control" value="" required="required" title="">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>
+
+
+<!--表单 form-control在每一个控件上添加会有特殊效果。添加属性 disabled表单被禁用，不能输入。class中添加input-lg input-sm表单更大，更小。-->
+
+<!--验证表单：form-group对用容器中添加has-success has-error has-warning;要添加小图标，from-group容器中添加has-feedback 并且在对应的表单中添加glyphicon小图标，在icon前面添加<span class="help-block">显示提示内容-->
+<!--form-horizontal在form-group中的表单会水平排列；title为提示框中的内容placeholder为表单内的提示内容-->
+
+<form action="" method="POST" class="form-horizontal" role="form">
+        <div class="form-group">
+            <legend>表单名</legend>
+        </div>
+
+        <div class="form-group has-warning has-feedback">
+            <label for="input" class="col-sm-2 control-label">用户名：</label>
+            <div class="col-sm-10">
+                <input type="text" name="username" id="input" class="form-control input-lg" disabled="disabled" value="" required="required" pattern="" title="请输入用户名" placeholder="请输入用户名">
+                <span class="help-block">你输入的信息很危险，为此发出警告。</span>
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            </div>
+        </div>
+
+        <div class="form-group has-success has-feedback">
+            <label for="input" class="col-sm-2 control-label">信息：</label>
+            <div class="col-sm-10">
+                <input type="text" name="username" id="input" class="form-control " value="" required="required" pattern="" title="请输入用户名2" placeholder="请输入信息">
+                <span class="help-block">你输入的内容正确。</span>
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+        </div>
+
+        <div class="form-group has-error has-feedback">
+            <label for="input" class="col-sm-2 control-label">信息：</label>
+            <div class="col-sm-10">
+                <input type="text" name="username" id="input" class="form-control " value="" required="required" pattern="" title="请输入用户名2" placeholder="请输入信息">
+                <span class="help-block">你输入的内容错误。</span>
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Password:</label>
+            <div class="col-sm-10">
+                <input type="password" name="password" id="inputPassword" class="form-control" required="required" title="请输入密码" placeholder="请输入密码">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+</form>
+<!--表单按钮btn-default 默认 btn-primary 主要 btn-info信息 btn-danger 危险
+btn-warning 警告 btn-success 成功 disabled不可用
+btn-block区块 btn-lg btn-sm btn-xs
+a input 
+-->
+<button type="button" class="btn ">按钮btn</button>
+<button type="button" class="btn btn-default">默认btn btn-default</button>
+<button type="button" class="btn btn-default active">默认活动active</button>
+<button type="button" class="btn btn-default disabled">默认不可用disabled</button>
+<button type="button" class="btn btn-primary">主要btn-primary</button>
+<button type="button" class="btn btn-info">信息btn-info</button>
+<button type="button" class="btn btn-danger">危险btn-danger</button>
+<button type="button" class="btn btn-warning">警告btn-warning</button>
+<button type="button" class="btn btn-success">成功btn-success</button>
+<button type="button" class="btn btn-block btn-info">区块大按钮btn-block</button>
+<a class="btn btn-default" href="#" role="button">链接button</a>
+<input type="reset" value="input重置Reset" class="btn btn-default">
+<input type="submit" value="input提交submit" class="btn btn-default">
+<button type="submit" class="btn btn-primary">button提交</button>
+
+    
+<!--表格table-striped斑马线 隔行同色 table-hover 鼠标悬浮高亮 table-bordered 带边框 table-condensed 紧凑型 table-responsive响应式用在div中，当小屏显示不下时，增添水平滚动条-->
+<div class="table-responsive"></div>
+<table class="table table-hover  table-striped ">
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>姓名</th>
+            <th>姓名</th>
+            <th>姓名</th>
+
+            <th>姓名</th>
+            <th>姓名</th>
+            <th>姓名</th>
+            <th>姓名</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+        </tr>
+           <tr>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+        </tr>
+
+        <tr>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+        </tr>
+
+        <tr>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+            <td>张三</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+<!--列表-->
+<ul class="list-group">
+    <li class="list-group-item">Item 1</li>
+    <li class="list-group-item">Item 2</li>
+    <li class="list-group-item">Item 3</li>
+</ul>
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <span class="badge">5</span>
+        Item 1
+    </li>
+    <li class="list-group-item">
+        <span class="badge">10</span>
+        Item 2
+    </li>
+    <li class="list-group-item">
+        <span class="badge">15</span>
+        Item 3
+    </li>
+</ul>
+<div class="list-group">
+    <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">List group item heading</h4>
+        <p class="list-group-item-text">Content goes here</p>
+    </a>
+</div>
+<div class="list-group">
+    <a href="#" class="list-group-item active">Item 1</a>
+    <a href="#" class="list-group-item">Item 2</a>
+    <a href="#" class="list-group-item">Item 3</a>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

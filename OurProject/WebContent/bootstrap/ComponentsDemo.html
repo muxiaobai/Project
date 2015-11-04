@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ComponentsDemo</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css">body{padding-top: 70px;padding-bottom:70px;} </style>
+ <!-- -->
+
+</head>
+<body>
+
+<!--进度条div1中progress进度条progress-striped 条纹 条纹下添加active动态 
+div2中progress-bar基础progress-bar-info/danger/warning/success style=长度 -->
+
+<div class="progress">
+    <div class="progress-bar" style="width:30%;">30%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" >0%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-info" style="width: 40%;"></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-danger" style="width: 50%;"></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-warning" style="width: 60%;"></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" style="width: 70%;"></div>
+</div>
+<div class="progress progress-striped">
+    <div class="progress-bar" style="width: 60%;"></div>
+</div>
+<div class="progress progress-striped active">
+    <div class="progress-bar" style="width: 60%;"></div>
+</div>
+<div class="progress progress-striped active">
+    <div class="progress-bar progress-bar-success " style="width: 20%;">20%</div>
+    <div class="progress-bar progress-bar-info active" style="width: 10%;">10%</div>
+    <div class="progress-bar" style="width: 10%;">10%</div>
+</div>
+<!--alert警示框alert-danger/info/success/warning alert-link链接-->
+<div class="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>alert!</strong>alert 默认<a class="alert-link" href="#">链接</a>
+</div>
+<div class="alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>alert!</strong> alert-danger ...<a class="alert-link" href="#">链接</a>
+</div>
+<div class="alert alert-info">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>alert</strong> alert-info ...
+</div>
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>alert</strong> alert-success ...
+</div>
+<div class="alert alert-warning">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>alert</strong> alert-warning ...
+</div>
+<div class="alert alert-info">
+    <a class="close" data-dismiss="alert">&times;</a>
+    <strong>Information!</strong> This alert needs your attention, but it's not super important.
+</div>
+<!--固定式导航条navbar-fixed-top navar-fixed-bottom
+<style type="text/css">body{padding-top: 70px;padding-bottom} </style>页面顶部和底部内容被挡到
+ -->
+ <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+     <a class="navbar-brand" href="#">Title</a>
+     <ul class="nav navbar-nav">
+         <li class="active">
+             <a href="#">Home</a>
+         </li>
+         <li>
+             <a href="#">Link</a>
+         </li>
+     </ul>
+ </nav>
+<!--响应式导航条 在navbar-header中增加小屏显示的内容button包裹 navbar-toggle 
+将其余的内容都包裹到一个div中class= collapse navbar-collapse
+小屏显示的内容在span中-->
+<nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Title</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+<!--导航条-->
+
+<!--navbar navbar-default默认导航条 navbar-inverse反色导航条
+navbar-header navbar-brand 标题字体更大
+只需将ul>li 添加一个dropdown就可在导航条中增加下拉菜单
+form可以添加到li中也可以添加到ul同级中 navbar-left navbar-right
+-->
+<div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a href="#" class="navbar-brand">navbar-header navbar-brand标题</a>
+    </div>
+
+        <ul class="nav navbar-nav">
+            <li><a href="#">第一个</a></li>
+        </ul>
+         <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+         <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+       
+</div>
+<div class="navbar navbar-inverse" role="navigation">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">navbar-inverse反色active活动状态</a></li>
+            <li><a href="#">second</a></li>
+            <li class="disabled"><a href="#">disabled禁用状态</a></li>
+            <li class="dropdown">
+                <a class="btn  dropdown-toggle" data-toggle="dropdown" href="#">水果分类<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header">热带水果</li>
+                    <li><a href="#">椰子</a></li>
+                    <li><a href="#">香蕉</a></li>
+                    <li><a href="#">石硖龙眼</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">新疆水果</li>
+                    <li><a href="#">葡萄</a></li>
+                    <li><a href="#">哈密瓜</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li> 
+
+        </ul>
+        
+</div>
+<!---->
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#1" data-toggle="tab">Section 1</a></li>
+        <li><a href="#2" data-toggle="tab">Section 2</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="1">
+            <p>I'm in Section 1.</p>
+        </div>
+        <div class="tab-pane" id="2">
+            <p>Howdy, I'm in Section 2.</p>
+        </div>
+    </div>
+    <ul>
+        
+    </ul>    
+
+<!--导航 必须有nav， nav-tabs标签形 nav-pills胶囊形(选中为蓝色)
+active 活动状态 disabled 禁用状态-->
+
+
+<ul class="nav nav-tabs">
+    <li ><a href="#">nav nav-tabs标签形</a></li>
+    <li class="active"><a href="#">active活动状态</a></li>
+    <li><a href="#">第一个</a></li>
+    <li class="disabled"><a href="#">disabled禁用状态</a></li>
+</ul>
+<hr>
+<ul class="nav nav-pills">
+    <li ><a href="#">nav nav-pills胶囊形</a></li>
+    <li class="active"><a href="#">active活动状态</a></li>
+    <li><a href="#">第一个</a></li>
+    <li class="disabled"><a href="#">disabled禁用状态</a></li>
+</ul>
+<!--nav-stacked 垂直型nav-divider 分割线 nav-justified 自适应 -->
+<ul class="nav nav-pills nav-stacked">
+    <li ><a href="#">nav nav-pills nav-stacked 垂直形</a></li>
+    <li class="active"><a href="#">active活动状态</a></li>
+    <li class="nav-divider"></li>
+    <li><a href="#">第一个</a></li>
+    <li class="disabled"><a href="#">disabled禁用状态</a></li>
+</ul>
+<ul class="nav nav-pills nav-justified">
+    <li ><a href="#">nav nav-pills nav-justified 自适应</a></li>
+    <li class="active"><a href="#">active活动状态</a></li>
+    <li><a href="#">第一个</a></li>
+    <li class="disabled"><a href="#">disabled禁用状态</a></li>
+</ul>
+<!--pagination分页导航pagination-lg 大pagination-sm 小pager翻页导航-->
+<ul class="pagination ">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
+<ul class="pagination pagination-lg">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
+<ul class="pager">
+    <li><a href="#">&laquo; pager 上一页</a></li>
+    <li><a href="#">pager 下一页&raquo;</a></li>
+</ul>
+<ul class="pager">
+    <li class="previous"><a href="#">&laquo; pager previous上一页</a></li>
+    <li class="next"><a href="#">pager next下一页&raquo;</a></li>
+</ul>
+<!--breadcrumb 面包屑导航-->
+<ol class="breadcrumb">
+    <li>
+        <a href="#">主页</a>
+    </li>
+    <li>
+        <a href="#">产品分类</a>
+    </li>
+        <li>
+        <a href="#">产品明细</a>
+    </li>
+    <li class="active">breadcrumb</li>
+</ol>
+
+
+<!---->
+
+<!--下拉菜单
+dropdown-header菜单中标题
+divider分割线 
+-->
+
+<div class="dropdown">
+    <a class="btn  dropdown-toggle" data-toggle="dropdown" href="#">水果分类<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li class="dropdown-header">热带水果</li>
+        <li><a href="#">椰子</a></li>
+        <li><a href="#">香蕉</a></li>
+        <li><a href="#">石硖龙眼</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">新疆水果</li>
+        <li><a href="#">葡萄</a></li>
+        <li><a href="#">哈密瓜</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</div>
+
+
+<!--按钮组btn-group btn-group-vertical垂直形
+btn-boolbar 工具栏 btngroup-sm/lg/xs-->
+<div class="btn-group">
+    <button type="button" class="btn btn-default">Top</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Bottom</button>
+</div>
+<div class="btn-group-vertical">
+    <button type="button" class="btn btn-default">Top</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Bottom</button>
+</div>
+<div class="btn-group">
+    <a class="btn btn-default" href="#" role="button">Left</a>
+    <a class="btn btn-default" href="#" role="button">Middle</a>
+    <a class="btn btn-default" href="#" role="button">Right</a>
+    <div class="btn-group">
+        <a class="btn  btn-default dropdown-toggle" data-toggle="dropdown" href="#">Action <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+</div>
+<div class="btn-group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+    <div class="btn-group">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+</div>
+<div class="btn-toolbar">
+    <div class="btn-group btn-group-xs">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <div class="btn-group btn-group-sm">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <div class="btn-group btn-group-lg">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+</div>
+
+<!--列表组list-group list-group-item具体的一项 active disabled 活动/禁用 怎么不行？
+list-group-item-heading/text
+list-group-item-info/success/warning/danger详细状态-->
+
+<div class="list-group">
+    <a href="#" class="list-group-item ">
+        <h4 class="list-group-item-heading">主题1</h4>
+        <p class="list-group-item-text">内容11</p>
+        <p class="list-group-item-text">内容12</p>
+    </a>
+    <a href="#" class="list-group-item ">
+        <h4 class="list-group-item-heading">主题2</h4>
+        <p class="list-group-item-text">内容</p>
+        <p class="list-group-item-text">内容</p>
+    </a>
+</div>
+
+<div class="list-group">
+    <a href="#" class="list-group-item ">link链接</a>
+    <a href="#" class="list-group-item disabled">disabled</a>
+    <a href="#" class="list-group-item active">active</a>
+</div>
+<!--注意两种链接的不同样式：按钮和字体为链接-->
+<ul class="list-group">
+    <li class="list-group-item">徽章badge<span class="badge">123</span></li>
+    <li class="list-group-item active"><a href="#">active</a></li>
+    <li class="list-group-item disabled"><a href="#">disabled</a></li>
+    <li class="list-group-item list-group-item-warning"> warning</li>
+    <li class="list-group-item list-group-item-info">info</li>
+    <li class="list-group-item list-group-item-danger">danger</li>
+    <li class="list-group-item list-group-item-success">success</li>
+    <li class="list-group-item">Item 3</li>
+</ul>
+<!---->
+
+<!--面板panel panel-default默认 panel-danger/info/warning/success/primary
+panel-heading/body/footer  -->
+<div class="panel ">
+    <div class="panel-body">
+       Basic panel example
+    </div>
+</div>
+<div class="panel panel-danger">
+      <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+            Panel content
+             <!-- Table -->
+        <table class="table ">
+            <thead>
+                <tr>
+                    <th>Heading 1</th>
+                </tr>
+                <tr>
+                    <th>Heading 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Content 1</td>
+                </tr>
+                <tr>
+                    <td>Content 2</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="panel-footer">
+            Panel footer
+      </div>
+</div>
+<!--注意两种表格tablr的位置：一个在panel-body内部/一个在panel-body外面
+同理适用于列表项 list-group-->
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<div class="list-group">
+    <a href="#" class="list-group-item active">Item 1</a>
+    <a href="#" class="list-group-item">Item 2</a>
+    <a href="#" class="list-group-item">Item 3</a>
+</div>
+<ul class="list-group">
+    <li class="list-group-item">Item 1</li>
+    <li class="list-group-item">Item 2</li>
+    <li class="list-group-item">Item 3</li>
+</ul>
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+            <p>Text goes here...</p>
+        </div>
+
+        <!-- Table -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Heading 1</th>
+                </tr>
+                <tr>
+                    <th>Heading 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Content 1</td>
+                </tr>
+                <tr>
+                    <td>Content 2</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+<!--媒体对象media media-body主题内容 -->
+<ul class="media-list">
+    <li class="media">
+        <a class="pull-left" href="">
+            <img class="media-object" src="images/opera-logo.jpg" alt="Image" style="height:50px ;width:100% display:block;">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Text goes here...</p>
+        </div>
+    </li>
+    <li class="media">
+        <a class="pull-left" href="">
+            <img class="media-object" src="images/opera-logo.jpg" alt="Image" style="height:50px ;width:100% display:block;">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Text goes here...</p>
+        </div>
+    </li>
+</ul>
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="images/opera-logo.jpg" alt="Image" style="height:180px ;width:100% display:block;">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        <p>Text goes here...</p>
+        <p>Text goes here...</p>
+        <p>Text goes here...</p>
+        <p>Text goes here...</p>
+        <div class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="images/opera-big.jpg" alt="Image"style="height:180px ;width:100% display:block;">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Text goes here...</p>
+            <p>Text goes here...</p>
+            <p>Text goes here...</p>
+            <p>Text goes here...</p>
+            <div class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="images/opera-big.jpg" alt="Image"style="height:180px ;width:100% display:block;">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Text goes here...</p>
+        </div>
+    </div>
+        </div>
+    </div>
+    </div>
+    
+</div>
+
+<!---->
+<!---->
+<!--缩略图thumbnail大图 caption添加内容-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail">
+                <img src="images/opera-logo.jpg" style="height:180px ;width:100% display:block;"  alt="">      
+            </a> 
+            <div class="caption">
+                <h4 >Media heading</h4>
+                <p>Text goes here...Text goes here...</p>
+                <p>Text goes here...Text goes here...</p>
+            </div>   
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail">
+                <img src="images/opera-big.jpg"  style="height:180px ;width:100% display:block;" alt="">          
+            </a>    
+            <div class="caption">
+                <h4 >Media heading</h4>
+                <p>Text goes here...Text goes here...</p>
+                <p>Text goes here...Text goes here...</p>
+            </div>   
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail">
+                <img src="images/safari-logo.jpg" style="height:180px ;width:100% display:block; " alt="">
+            </a>    
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail">
+                <img src="images/safari-big.jpg" style="height:180px ;width:100% display:block;"  alt=""> 
+            </a>    
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail">
+                <img src="images/opera-logo.jpg" style="height:180px ;width:100% display:block;"  alt="">      
+            </a> 
+            <div class="caption">
+                <h4 >Media heading</h4>
+                <p>Text goes here...Text goes here...</p>
+                <p>Text goes here...Text goes here...</p>
+            </div>   
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail">
+                <img src="images/opera-big.jpg"  style="height:180px ;width:100% display:block;" alt="">          
+            </a>    
+            <div class="caption">
+                <h4 >Media heading</h4>
+                <p>Text goes here...Text goes here...</p>
+                <p>Text goes here...Text goes here...</p>
+            </div>   
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail">
+                <img src="images/safari-logo.jpg" style="height:180px ;width:100% display:block; " alt="">
+            </a>    
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail">
+                <img src="images/safari-big.jpg" style="height:180px ;width:100% display:block;"  alt=""> 
+            </a>    
+        </div>
+        
+    </div>
+</div>
+<!--标签label label-default/danger/info/warning/success/primary 为什么没有label在字的上面？-->
+<span class="label">Label</span>
+<span class="label label-default">Label-defualt</span>
+<span class="label label-primary">Label-primary</span>
+<span class="label label-danger">Label-danger</span>
+<span class="label label-success">label-success</span>
+<span class="label label-warning">Label-warning</span>
+<span class="label label-info">Label-info</span>
+<h1>活动<span class="label label-default">优惠</span></h1>
+
+<!--徽章badge-->
+<span class="badge">徽章</span>
+<h1>活动<span class="badge">B</span></h1>
+<!--glyphicon字体glyphicon glyphicon-加自定义-->
+<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+<!--巨幕jumbotron-->
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

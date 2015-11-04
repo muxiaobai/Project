@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="../../bootstrap/js/jquery-1.11.1.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+
+<style type="text/css">
+	th { 
+    text-align:center;
+	font-size:15px;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+       <div class="navbar navbar-duomi navbar-static-top" role="navigation">
+              <div class="page-header" style="color:orange">
+               <h1><strong>审核需求</strong></h1>
+              </div>
+       </div> 
+<h3>点击按钮改变需求状态</h3>
+
+	
+<!-- <form action="../../Staff_ConsumerManagement_CheckNeed" method="post"> -->
+<!-- 	请输入查询关键字：<input type="text" name="kw"> -->
+<!-- 	<input class='btn' type="submit" value="查询"> -->
+<!-- 	<input class='btn'type="reset" value="重置"> -->
+<!-- </form> -->
+<div id="Sea">    
+        <table class="table table-responsive table-bordered" align="center">
+        <thead><tr align="center"><th>序号</th><th>供应商ID</th><th>数量</th><th>单位</th><th>最高价格</th><th>最低价格</th><th>开始时间</th><th>结束时间</th><th>提交时间</th><th>审核通过</th></tr></thead>
+        <tbody>
+        
+        </tbody>
+        </table>
+<ul class="pager">
+<li><a href = "#" onclick="first()">首页</a></li>
+<li><a href = "#" class="previous" id="previous" onclick="previous()" >上一页</a></li>
+第<input type="text" id="page" value="1" size="3"/>页
+<li><a href = "#" class="next" id="next" onclick="next()" >下一页</a></li>
+<li><a href="#" onclick="last()">尾页</a></li>
+共<label id="total">0</label>条记录
+共<label id="pageCount">0</label>页
+</ul>  
+</div>
+</div>
+<script src="Staff_ConsumerManagement_CheckNeed.js"></script>
+</body>
+</html>
